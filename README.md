@@ -15,7 +15,7 @@
 - **Operating System**: `Arch Linux`
 - **Window Manager**: `Hyprland`
 - **Status Bar**: `Waybar`
-- **App Launcher**: `Wofi`
+- **App Launcher**: `Rofi`
 - **Terminal**: `Alacritty`
 
 ## Appearance
