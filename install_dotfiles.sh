@@ -33,7 +33,7 @@ install_dotfiles() {
     if [[ -d "/tmp/dotfiles" ]]; then
         cd /tmp/dotfiles || exit
     else
-        git clone --depth 1 --quiet https://github.com/sane1090x/dotfiles /tmp/dotfiles
+        git clone --depth 1 --quiet https://github.com/StikyPiston/Hyprdots-Alt /tmp/dotfiles
         cd /tmp/dotfiles || exit
     fi
 
@@ -106,7 +106,7 @@ main() {
     trap exit_on_signal_SIGTERM SIGTERM
 
     echo
-    echo -en "${b_blue}This script is tested only on Arch Linux; it might fail on other systems. Do you want to continue? [y/N] ${col_reset}"
+    echo -en "${b_blue}This script is tested only on Fedora 40; it might fail on other systems. Do you want to continue? [y/N] ${col_reset}"
     read -r start_confirmation
 
     if [[ ! $start_confirmation =~ ^[Yy]$ ]]; then
